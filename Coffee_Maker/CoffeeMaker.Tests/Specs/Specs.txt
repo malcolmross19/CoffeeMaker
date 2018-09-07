@@ -1,0 +1,36 @@
+﻿Given a Coffee Maker
+And I press the brew button
+Then I start a brew cycle
+
+Given a Coffee Maker
+And I put a filter in the filter holder
+And I fill the filter with coffee grounds
+And I slide the filter holder into its receptacle
+And I pour up to 12 cups of water into the water strainer
+When I start a brew cycle
+Then the water is heated to boiling
+And the water is sprayed over the coffee grounds
+And the coffee drips through the filter into the pot
+And the pot is kept warm by the warmer plate
+
+Given a Coffee Maker
+And I started a brew cycle
+When the brew cycle is over
+Then an indicator lights up
+And I have a pot of coffee
+
+Given a Coffee Maker
+When the pressure valve opens
+Then the pressure in the boiler is reduced
+And the flow of water to the filter is stopped
+
+Given a Coffee Maker
+And a pot of coffee
+When I remove the pot of coffee from the warming plate
+Then the warming plate shuts off
+
+Given a Coffee Maker
+And a pot of coffee
+And I started a brew cycle
+When I remove the pot of coffee from the warming plate
+Then the flow of water to the filter is stopped
